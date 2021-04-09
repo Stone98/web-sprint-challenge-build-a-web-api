@@ -126,9 +126,9 @@ After finishing your required elements, you can push your work further. These go
 
 **IMPORTANT:** Do not break any MPV functionality by adding "stretch" code! Keep an eye on those tests!
 
-- [ ] Deploy the API to Heroku. Deployed to: https://build-a-web-api.herokuapp.com/
-- [ ] Configure the API to support environment variables.
-- [ ] Use middleware for validation of incoming data.
+- [ ] Deploy the API to Heroku. // Deployed to: https://build-a-web-api.herokuapp.com/
+- [ ] Configure the API to support environment variables. // .env file added with PORT and NODE_ENV
+- [ ] Use middleware for validation of incoming data. // See middleware folder in api folder
 
 ## Submission format
 
