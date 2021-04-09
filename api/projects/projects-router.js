@@ -1,4 +1,4 @@
-const router = require("express").Router(); // sets up router
+const router = require("express").Router(); // sets up projects router
 const Project = require("./projects-model"); // imports projects model functions
 const mw = require("../middleware/projects-middlewares"); // imports projects middlewares using a named import
 
