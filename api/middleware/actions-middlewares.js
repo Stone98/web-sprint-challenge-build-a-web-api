@@ -1,4 +1,4 @@
-const Action = require("../actions/actions-model"); // import action model functions
+const Action = require("../actions/actions-model"); // import actions model functions
 
 // checks to see if action exists based on the id given
 const validateActionId = async (req, res, next) => {
@@ -21,7 +21,7 @@ const validateActionId = async (req, res, next) => {
 // check to see if the correct req.body is sent to either insert or update an action
 const validateAction = (req, res, next) => {
   if (!req.body) {
-    // sends error if nothing in req.body
+    // sends error if nothing provided in the req.body
     res.status(400).json({ message: "missing action data" });
   } else if (!req.body.description || !req.body.description.trim()) {
     // sends error if no description or description is not trimmed
