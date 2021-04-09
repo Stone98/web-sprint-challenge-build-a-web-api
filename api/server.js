@@ -12,4 +12,8 @@ server.use(helmet());
 server.use("/api/actions", actionsRouter);
 server.use("/api/projects", projectsRouter);
 
+server.use("*", (req, res) => {
+  res.send(`<h1>API is up!</h1>`);
+});
+
 module.exports = server;
